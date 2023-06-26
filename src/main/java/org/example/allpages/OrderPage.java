@@ -5,19 +5,19 @@ import org.openqa.selenium.*;
 public class OrderPage {
     private WebDriver driver;
     //Локатор поля ввода имени
-    private final By firstName = By.xpath(".//input[@placeholder='* Имя']");
+    private By firstName = By.xpath(".//input[@placeholder='* Имя']");
     //Локатор поля ввода фамилии
-    private final By lastName = By.xpath(".//input[@placeholder='* Фамилия']");
+    private By lastName = By.xpath(".//input[@placeholder='* Фамилия']");
     //Локатор поля ввода адреса
-    private final By deliveryAddress = By.xpath(".//input[@placeholder='* Адрес: куда привезти заказ']");
+    private By deliveryAddress = By.xpath(".//input[@placeholder='* Адрес: куда привезти заказ']");
     //Локатор поля ввода станции метро
-    private final By deliveryMetroStation = By.xpath(".//input[@placeholder='* Станция метро']");
+    private By deliveryMetroStation = By.xpath(".//input[@placeholder='* Станция метро']");
     //Локатор списка станций метро
-    private final By selectMetroStation = By.xpath(".//*[@class='Order_SelectOption__82bhS select-search__option' and @value='8']");
+    private  By selectMetroStation = By.xpath(".//*[@class='Order_SelectOption__82bhS select-search__option' and @value='8']");
     //Локатор поля ввода телефона
-    private final By phoneNumber = By.xpath(".//input[@placeholder='* Телефон: на него позвонит курьер']");
+    private By phoneNumber = By.xpath(".//input[@placeholder='* Телефон: на него позвонит курьер']");
     //Локатор кнопки "Далее"
-    private final By nextButton = By.xpath(".//button[(@class ='Button_Button__ra12g Button_Middle__1CSJM' and text()='Далее')]");
+    private By nextButton = By.xpath(".//button[(@class ='Button_Button__ra12g Button_Middle__1CSJM' and text()='Далее')]");
 
     public OrderPage(WebDriver driver) {
         this.driver = driver;

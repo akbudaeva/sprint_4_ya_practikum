@@ -4,27 +4,27 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
 public class RentPage {
-    private final WebDriver driver;
+    private WebDriver driver;
     //локатор для поля начала аренды
-    private final By startDateRent = By.xpath(".//input[@placeholder='* Когда привезти самокат']");
+    private  By startDateRent = By.xpath(".//input[@placeholder='* Когда привезти самокат']");
     //локатор для поля срока аренды
-    private final By periodRent = By.className("Dropdown-control");
+    private  By periodRent = By.className("Dropdown-control");
     // Локатор списка срока аренды
-    private final By selectPeriodRent = By.xpath(".//*[(@role ='option' and text()='трое суток')]");
+    private  By selectPeriodRent = By.xpath(".//*[(@role ='option' and text()='трое суток')]");
     // Локатор цвета  "Черный жемчуг"
-    private final By checkBoxColourBlackPearl = By.xpath(".//input[@id='black']");
+    private  By checkBoxColourBlackPearl = By.xpath(".//input[@id='black']");
     // Локатор цвета  "Серая безысходность"
-    private final By checkBoxColourGreyDespair = By.xpath(".//input[@id='grey']");
+    private  By checkBoxColourGreyDespair = By.xpath(".//input[@id='grey']");
     //локатор для поля комментарий
-    private final By commentField = By.xpath(".//input[@placeholder='Комментарий для курьера']");
+    private  By commentField = By.xpath(".//input[@placeholder='Комментарий для курьера']");
     //локатор для кнопки "Назад"
-    private final By previousButton = By.xpath("Button_Button__ra12g Button_Middle__1CSJM Button_Inverted__3IF-i");
+    private By previousButton = By.xpath("Button_Button__ra12g Button_Middle__1CSJM Button_Inverted__3IF-i");
     //локатор для кнопки "Заказать"
-    private final By orderButton = By.xpath(".//button[@class='Button_Button__ra12g Button_Middle__1CSJM']");
+    private  By orderButton = By.xpath(".//button[@class='Button_Button__ra12g Button_Middle__1CSJM']");
     //Локатор для кнопки "Да"
-    private final By acceptOrderButton = By.xpath(".//button[@class='Button_Button__ra12g Button_Middle__1CSJM' and text()='Да']");
+    private By acceptOrderButton = By.xpath(".//button[@class='Button_Button__ra12g Button_Middle__1CSJM' and text()='Да']");
     //Локатор для окна заказа
-    private final By orderWindow = By.xpath(".//button[@class='Button_Button__ra12g Button_Middle__1CSJM' and text()='Посмотреть статус']");
+    private By orderWindow = By.xpath(".//button[@class='Button_Button__ra12g Button_Middle__1CSJM' and text()='Посмотреть статус']");
 
     public RentPage(WebDriver driver) {
         this.driver = driver;
